@@ -1,0 +1,39 @@
+/* rem and em do NOT depend on html font-size in media queries 
+instead, 1rem=1em=16px*/
+@media (max-width: 40em) {
+  html {
+    font-size: 45%;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+  main {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .btn {
+    /* transform: translate(-50%); */
+    top: 0;
+    left: 0;
+  }
+  .dice {
+    left: 50%;
+    top: 46%;
+  }
+  .btn--roll {
+    left: 20%;
+    top: 48%;
+    width: 14rem;
+  }
+  .btn--hold {
+    top: 48%;
+    left: 80%;
+    width: 14rem;
+  }
+
+  .btn--new {
+    top: 2%;
+    left: 50%;
+  }
+}
